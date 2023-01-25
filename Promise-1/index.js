@@ -1,8 +1,9 @@
 // Make a new Promise
+
 const p = new Promise((resolve, reject) => {
   setTimeout(() => {
-    // reject("--- Oops ---");
-    resolve('>>> Success! <<<');
+    // resolve('>>> Success! <<<');
+    reject("--- Oops ---");
   }, 2000);
 });
 
@@ -12,7 +13,12 @@ p.then((message) => {
 }).catch((err) => {
   console.log('Promise rejected 😞');
   console.log(err);
+}).finally(() => {
+  console.log('All done!')
 });
+
+
+
 
 // **Problems to solve**
 
@@ -23,3 +29,4 @@ p.then((message) => {
 // **3)** Does the order matter you call resolve and reject matter? Test this. 
 
 // **4)** What happens if you call `resolve` or `reject` more than once? Test this out for yourself.
+
