@@ -1,15 +1,9 @@
-function whatToEat(timeOfDay) {
-  // Create a new promise and return it here
-  
-}
+// Use your what to eat promise here. 
+// Add a finally block on the end so that after every meal you belch! 
+// In many cultures it shows you had a satisfying meal! 
 
+// Define the whatToEat function here:
 
-// Call yout function and resolve the promise here! 
-whatToEat('lunch')
+// Resolve with .then(), .catch(), and .finally() here: 
 
-
-// If the `timeOfDay` is 'breakfast', 'lunch', or 'dinner' 
-// resolve the promise with your favorite food for that time. 
-
-// If the `timeOfDay` is anything else reject the promise with 
-// the 'message' I'm not hungry right now.  
+// Test all fo the cases
